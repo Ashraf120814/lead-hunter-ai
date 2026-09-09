@@ -6,12 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:scoring": "npx tsx src/lib/scoring/engine.test.ts",
+    "db:types": "echo 'Generate types from Supabase when connected'"
   },
   "dependencies": {
     "next": "16.3.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "@supabase/supabase-js": "^2.49.1",
+    "@supabase/ssr": "^0.6.1",
+    "zod": "^3.24.2",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2",
+    "lucide-react": "^0.484.0",
+    "recharts": "^2.15.1",
+    "exceljs": "^4.4.0",
+    "date-fns": "^4.1.0",
+    "sonner": "^2.0.1",
+    "class-variance-authority": "^0.7.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,6 +34,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "tsx": "^4.19.3"
   }
 }
